@@ -1,16 +1,16 @@
 #  Vehicle Damage Detection App  
 
-This application utilizes **deep learning** to classify **vehicle damage** from images.  
-Users can **upload a car image**, and the model will identify whether the **front or rear part is normal, crushed, or broken**.  
-
-The system is built using **FastAPI for the backend** and **Streamlit for the frontend**, making it easy to deploy and interact with.  
+This project is an end-to-end deep learning application to detect and classify car damage into 6 categories using transfer learning with ResNet50. The model is deployed via a FastAPI backend and accessed through a Streamlit web interface. Users can **upload a car image**, and the model will identify whether the **front or rear part is normal, crushed, or broken**.  
 The model is trained to work best with **third-quarter front and rear views** of a car.  
 
+The goal is to automate the detection of car damages from images, which can significantly reduce the manual effort required by insurance or rental companies during claim processing or vehicle return checks.
+
+
 ## Features  
-- **AI-powered vehicle damage classification**  
+- **Multi-class classification**: 6 damage categories (front/rear - breakage, crushed, normal)
 - **FastAPI backend** for quick predictions  
-- **Streamlit UI** for an intuitive experience  
-- **ResNet50-based deep learning model**  
+- **Frontend**: Easy-to-use Streamlit web app for image upload and prediction
+- **Transfer Learning**: ResNet50 with fine-tuned final layers
 - Supports **real-time image uploads**  
 
 ## Model Details  
